@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Form from "./components/Form";
+import React, { useEffect, useState } from "react";
+import GlobalStyle from "./styles/global";
 import Header from "./components/Header";
 import Resume from "./components/Resume";
-import GlobalStyle from "./styles/global";
+import Form from "./components/Form";
 
 const App = () => {
   const data = localStorage.getItem("transactions");
@@ -44,7 +44,11 @@ const App = () => {
     <>
       <Header />
       <Resume income={income} expense={expense} total={total} />
-      <Form handleAdd={handleAdd} />
+      <Form
+        handleAdd={handleAdd}
+        transactionsList={transactionsList}
+        setTransactionsList={setTransactionsList}
+      />
       <GlobalStyle />
     </>
   );

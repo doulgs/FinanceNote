@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   max-width: 1120px;
   margin: 20px auto;
-  width: 98%;
+  width: 90%;
   background-color: #fff;
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 5px;
@@ -48,5 +48,5 @@ export const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   color: white;
-  background-color: #011627;
+  background-color: #202123;
 `;
